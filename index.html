@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional personal portfolio website showcasing my projects and skills.">
+    <meta name="keywords" content="portfolio, web developer, projects, skills">
+    <title>Sithong - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">SB</a>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Sithong</h1>
+            <p class="hero-subtitle">Full Stack Web Developer & Creative Designer</p>
+            <p class="hero-description">
+                I create beautiful, responsive websites that help businesses grow and users succeed.
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="chevron"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="profile-section">
+                <div class="profile-image-wrapper">
+                    <div class="profile-glow"></div>
+                    <img src="https://i.imgur.com/VVmJZLz.jpeg" alt="Profile Photo" class="profile-image">
+                    <div class="profile-shape"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Welcome to my digital portfolio! I'm a passionate full-stack web developer with 5+ years of experience 
+                        creating elegant, functional web solutions. I specialize in building responsive websites and applications 
+                        with modern technologies.
+                    </p>
+                    <p>
+                        My journey in web development started with a curiosity about how websites work, and it has evolved into 
+                        a career dedicated to creating beautiful user experiences. I love solving complex problems and turning 
+                        ideas into reality through code.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me contributing to open-source projects, writing tech blogs, or exploring 
+                        new framework and technologies. I'm always excited to collaborate on exciting projects!
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>30+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Web App</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/jVvExox.jpeg" alt="E-Commerce Platform">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="portfolio-category">Web Design</p>
+                        <p class="portfolio-description">
+                            A responsive e-commerce platform with product catalog, shopping cart, and payment integration.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/hBXaPSk.jpeg" alt="Task Management App">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Task Management App</h3>
+                        <p class="portfolio-category">Web App</p>
+                        <p class="portfolio-description">
+                            A dynamic task management application with drag-and-drop functionality and real-time updates.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/UwoSHv1.jpeg" alt="Design System">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Design System</h3>
+                        <p class="portfolio-category">UI/UX</p>
+                        <p class="portfolio-description">
+                            A comprehensive design system with reusable components and guidelines for consistent UI.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI Kit</span>
+                            <span class="tech-tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/BYKxH3z.jpeg" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Website</h3>
+                        <p class="portfolio-category">Web Design</p>
+                        <p class="portfolio-description">
+                            A modern restaurant website with menu showcasing, reservation system, and location details.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/72wZvJD.jpeg" alt="Weather App">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Weather App</h3>
+                        <p class="portfolio-category">Web App</p>
+                        <p class="portfolio-description">
+                            A weather application that fetches real-time data and displays forecasts with beautiful UI.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="https://i.imgur.com/K577TPN.jpeg" alt="Mobile App UI">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" title="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile App UI Kit</h3>
+                        <p class="portfolio-category">UI/UX</p>
+                        <p class="portfolio-description">
+                            A complete UI kit designed for mobile applications with iOS and Android design standards.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Sketch</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>CSS/SCSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Node.js</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>SQL/Databases</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>RESTful API</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Git & GitHub</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Figma & Design</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Docker</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>AWS</span>
+                                <span>72%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="contact-intro">
+                I'd love to hear about your project. Feel free to reach out with any inquiries or just to say hello!
+            </p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Vientiane Capital, Laos</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:sithong112006@gmail.com">sithong112006@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+8562092158567">+856 20 921 585 67</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sithong</h3>
+                    <p>Full Stack Web Developer & Creative Designer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sithong. All rights reserved.</p>
+                <p>Designed & Developed with <i class="fas fa-heart"></i> by Sithong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
